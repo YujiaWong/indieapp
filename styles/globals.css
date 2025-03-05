@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.group[data-focus-visible="true"] .group-data-\[focus-visible\=true\]\:ring-2 {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0
+    var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0
+    calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow),
+    var(--tw-shadow, 0 0 #0000);
+}
+.group[data-focus-visible="true"]
+  .group-data-\[focus-visible\=true\]\:ring-focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: none !important;
+}
+.group[data-focus-visible="true"]
+  .group-data-\[focus-visible\=true\]\:ring-offset-2 {
+  --tw-ring-offset-width: 2px;
+}
+.group[data-focus-visible="true"]
+  .group-data-\[focus-visible\=true\]\:ring-offset-background {
+  --tw-ring-offset-color: none !important;
+}
+
+.home-page {
+  .react-flow__background {
+    position: fixed !important;
+    z-index: -1;
+  }
+}
+
+.react-flow__panel {
+  display: none;
+}
+
+header {
+  max-width: auto;
+}
