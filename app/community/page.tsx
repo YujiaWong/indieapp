@@ -57,7 +57,7 @@ export default () => {
                     type='search'
                     variant='bordered'
                     placeholder='Search app here'
-                    startContent={<IoSearch />}
+                    startContent={<IoSearch/>}
                     size='lg'
                   />
                 </div>

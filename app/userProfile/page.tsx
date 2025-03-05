@@ -21,6 +21,8 @@ export default () => {
   const getProjectList = async ({ pageNum }: any) => {
     try {
       const res = await API.project.pubList({
+        sortField: 'creation_time',
+        asc:false,
         pageNum,
         pageSize: 12,
       });
